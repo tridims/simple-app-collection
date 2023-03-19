@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "d10ee009-3d49-4a12-bab4-2930df22a1bc",
+		"name": "todolist_api_rust",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_entries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/todolist/entries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todolist",
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Date with girlfriends\",\n    \"date\": 166324878787787\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todolist/entries",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todolist",
+						"entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_entry",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"shopping\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/todolist/entries/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todolist",
+						"entries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_entry",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/todolist/entries/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"todolist",
+						"entries",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
